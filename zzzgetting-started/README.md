@@ -81,7 +81,11 @@ Each `h1` header creates a "Mark Complete" button for content between it and nex
 
 ## Links
 
-[This](https://github.com/MakeSchool-Tutorials/Tutorial-Template) creates a link. Relative links should only be used when [linking to assets in the repository](assets/ms-logo.png).
+```
+[This](https://github.com/MakeSchool-Tutorials/Tutorial-Template) 
+``` 
+[This ^^^](https://github.com/MakeSchool-Tutorials/Tutorial-Template) creates a link. Relative links should only be used when [linking to assets in the repository](assets/ms-logo.png).
+
 
 _Relative links to files in the same works on makeschool.com but the links will not do anything when clicked from ms-markdown-preview._
 
@@ -118,14 +122,16 @@ YouTube videos cannot be directly embedded in markdown. The following syntax wil
 ### MP4/MOV
 
 The following syntax will embed an MP4/MOV video with controls. Videos can be referenced with URLs or relative links if they are included in the repository. This works great with short screencasts made with QuickTime.
-
-![ms-video](assets/short-video.mov)
+```
+![VIDEO](assets/short-video.mov)
+```
+![VIDEO](assets/short-video.mov)
 
 ### PDF
 
-The following syntax will embed a PDF for viewing in-line. PDFs can be referenced with URLs or relative links if they are included in the repository.
+A PDF can not be embedded in markdown for viewing in-line. PDFs can be referenced with URLs or relative links if they are included in the repository, or a linked image of the pdf can be used, as indicated above for YouTube videos.
 
-![ms-pdf](assets/empty-slides.pdf)
+[This](assets/empty-slides.pdf)
 
 Images can also be included by full URL. This should be avoided in favor of images being stored in the tutorial repository.
 
@@ -201,20 +207,18 @@ Use quote boxes to include a quote.
 
 Use info boxes to draw a students attention to an important concept.
 
-> [info]
-> Important concepts should be recapped or summarized in info boxes.
+=> Important concepts should be recapped or summarized in info boxes.
 
 ### Action box
 
 Use action boxes whenever the student should do something (add code, implement pseudocode, change IDE settings, download files, etc).
 
-> [action]
 > Add the following import statement to the top of _TimelineViewController.swift_:
->
+
 ```
 import ConvenienceKit
 ```
->
+
 > This is still part of the box! Remember, code blocks need an empty line above them. In the case of code blocks inside of boxes, the line before and after a code block should only contain a `>` character.
 
 This is no longer part of the box.
@@ -223,9 +227,8 @@ This is no longer part of the box.
 
 Use solution boxes to keep a solution hidden until the student hovers over it. These should be placed after a student has been asked to try implementing something themselves.
 
-> [solution]
 > This content is hidden until the user hovers over the box. Check it out with ms-markdown-preview!
->
+
 ```
 import ConvenienceKit
 ```
@@ -236,9 +239,8 @@ This is not part of the box.
 
 Use challenge boxes should be used for additional features the user might want to implement.
 
-> [challenge]
 > Would you kindly add a high score popup?
->
+
 > The game could use some social integration as well!
 
 This is not part of the box.
@@ -247,29 +249,24 @@ This is not part of the box.
 
 #### This will not render correctly
 
-> [action]
 > Try viewing this with ms-markdown-preview!
 
-> [info]
 > The renderer will treat these as the same box :(
 
 #### This will render correctly
 
-> [action]
 > Try viewing this with ms-markdown-preview!
 
 <!--  -->
 
-> [info]
 > Adding an empty comment forces the renderer to treat these as separate boxes :D
->
+
 > The comment needs an empty line above and below it!
 
 ### Code blocks within action highlight boxes
 
-> [info]
 > Fenced code blocks exit prematurely if they contain an empty line while within an action highlight box. **To fix this, you will need to include a `>` on each empty line within the fenced code block!**
->
+
 ```
 import ConvenienceKit
 >
