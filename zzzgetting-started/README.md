@@ -109,7 +109,7 @@ The renderer has overhauled the image syntax for embedding MP4 videos, YouTube v
 
 ### YouTube
 
-YouTube videos cannot be directly embedded in markdown. The following syntax will provide
+YouTube videos cannot be directly embedded in markdown. The following syntax will provide a linked image:
 ```
 [![WATCH THIS VIDEO](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=6rT00QXqZak)
 ```
