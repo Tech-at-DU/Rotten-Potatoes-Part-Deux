@@ -1,6 +1,5 @@
 ---
-title: "Associate Reviews to Movies"
-slug: associate-reviews-to-movies
+# Associate Reviews to Movies
 ---
 
 ## User Stories
