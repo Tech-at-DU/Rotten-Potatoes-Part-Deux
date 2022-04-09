@@ -1,5 +1,5 @@
 ---
-title: "Seeing Movies"
+# Seeing Movies
 ---
 
 ## User Stories
